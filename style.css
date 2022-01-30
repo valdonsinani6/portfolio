@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #eff4fd;
+
+
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20x 0;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none ;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color: red;
+
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+
+}
+span{
+    color: orange;
+
+}
+.detel p{
+    color: #555;
+    line-height: 22px;
+
+}
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+
+
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute ;
+     bottom: 0;
+     right: 100px;
+
+}
+
+.images img{
+    height: 70%;
+    position: absolute;
+    left: 85%;
+    bottom: 1;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+    border-radius: solid;
+
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /* .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  } */
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px; 
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    list-style: none;
+}
+.mobile-menu li a{ 
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    
+
+}
+@media only screen and (max-width: 600px) {
+    .images img{ 
+        display:none;
+    }
+
+    .hero nav {
+        display: none;
+      }
+    
+      #hamburger-icon {
+        display: block;
+      }
+   
+   
+     
+      
+    }
+  
